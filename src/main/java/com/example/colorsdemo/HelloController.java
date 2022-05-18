@@ -2,6 +2,8 @@ package com.example.colorsdemo;
 
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
@@ -14,6 +16,8 @@ public class HelloController {
     String color2 = "#FF0000";
     String color3 = "#F00";
     String color4 = "#ff0000ff";
+    @FXML
+    private Button btn1;
 
     @FXML
     private AnchorPane anchorPane;
@@ -24,6 +28,8 @@ public class HelloController {
         BackgroundFill backgroundFill = new BackgroundFill(Color.valueOf(color3), CornerRadii.EMPTY, Insets.EMPTY);
         Background background = new Background(backgroundFill);
         anchorPane.setBackground(background);
+        btn1.setAlignment(Pos.CENTER_LEFT);
+
     }
 
 
